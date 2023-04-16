@@ -348,6 +348,7 @@ a:hover {
 
 .media__connect {
     display: flex;
+    align-items: center;
 }
 
 .media__title {
@@ -374,4 +375,25 @@ a:hover {
     font-size: 1.3rem;
     font-weight: 500;
     color: #223771;
+}
+
+/* footer */
+
+.footer {
+    padding: 30px;
+    background: #002b54;
+}
+
+.footer__logo {
+    padding: 30px 0;
+}
+
+.footer__separate {
+    margin-top: 40px;
+    height: 1.5px;
+    background: #1a4165;
+}
+
+.footer__desc {
+    margin-top: 30px;
 }
