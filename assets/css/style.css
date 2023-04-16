@@ -329,3 +329,49 @@ a:hover {
     border-radius: 50%;
     background: #fff;
 }
+
+/* media */
+
+.media__row {
+    display: flex;
+    padding: 55px 0;
+}
+
+.media__list {
+    display: flex;
+    column-gap: 130px;
+}
+
+.media__item {
+    width: 110px;
+}
+
+.media__connect {
+    display: flex;
+}
+
+.media__title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #223771;
+    margin-right: 180px;
+}
+
+.media__connect {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.media__desc {
+    margin-left: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.media__link {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #223771;
+}
