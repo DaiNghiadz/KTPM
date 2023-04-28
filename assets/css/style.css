@@ -29,13 +29,14 @@ a {
 
 .btn {
     display: inline-block;
-    width: 380px;
-    min-width: 380px;
-    padding: 17px 16px;
-    font-weight: 400;
+    width: 130px;
+    min-width: 118px;
+    padding: 18px 5px;
+    font-weight: 500;
     font-size: 1.3rem;
     text-align: center;
     color: #ffffff;
+    border-radius: 999px;
     background: var(--primary-color);
 }
 
@@ -45,8 +46,56 @@ a:hover {
 
 /* Header */
 
-.header__fixed {
+.header {
     padding: 20px 0;
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__tab {
+    margin-left: auto;
+}
+
+.header__list {
+    display: flex;
+    gap: 10px;
+}
+
+.header__item {
+    font-family: "Roboto", sans-serif;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #5f5b53;
+}
+
+.header__item--active {
+    position: relative;
+    color: #171100;
+}
+
+.header__item--active::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 2.1px;
+    background: #171100;
+    left: 22px;
+    bottom: 8px;
+}
+
+.header__item:hover {
+    color: #171100;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header__cta {
+    font-family: "Roboto", sans-serif;
+    margin-left: 20px;
 }
 
 .header__icon {
@@ -79,6 +128,7 @@ a:hover {
 
 .news__item {
     display: flex;
+    overflow: hidden;
 }
 
 .news__title {
@@ -249,6 +299,7 @@ a:hover {
 
 .events__item {
     position: relative;
+    overflow: hidden;
     width: 270px;
 }
 
@@ -309,6 +360,17 @@ a:hover {
     line-height: 19px;
     cursor: pointer;
     background: #fff;
+}
+
+.events__desc::after {
+    content: "";
+    rotate: 90deg;
+    position: absolute;
+    width: 58px;
+    height: 3px;
+    background: var(--primary-color);
+    left: -15px;
+    top: 378px;
 }
 
 .events__dots {

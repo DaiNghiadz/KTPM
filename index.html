@@ -108,16 +108,49 @@
     </head>
     <body>
         <!-- Header -->
-        <header class="header__fixed">
+        <header class="header header__fixed">
             <div class="contains">
-                <div class="header__brand">
-                    <a href="/">
-                        <img
-                            src="./assets/icon/logo_phenikaa.png"
-                            alt="logo"
-                            class="header__icon"
-                        />
-                    </a>
+                <div class="header__row">
+                    <!-- Header brand -->
+                    <div class="header__brand">
+                        <a href="/">
+                            <img
+                                src="./assets/icon/logo_phenikaa.png"
+                                alt="logo"
+                                class="header__icon"
+                            />
+                        </a>
+                    </div>
+
+                    <!-- nav -->
+                    <nav class="header__tab">
+                        <ul class="header__list">
+                            <li>
+                                <a
+                                    href="#!"
+                                    class="header__item header__item--active"
+                                    >Tin tức</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#!" class="header__item">Học Thuật</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="header__item">Thể Thao</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="header__item">Tìm đồ</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="header__item">Câu lạc bộ</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- cta -->
+                    <div class="header__cta">
+                        <a href="#!" class="btn">Đăng nhập</a>
+                    </div>
                 </div>
             </div>
         </header>
@@ -578,12 +611,13 @@
                                         class="events__image"
                                     />
                                 </a>
+                                <div class="events__date">
+                                    <span class="events__day">04</span>
+                                    <div class="separate"></div>
+                                    <span class="events__month">Tháng 4</span>
+                                </div>
                             </figure>
-                            <div class="events__date">
-                                <span class="events__day">04</span>
-                                <div class="separate"></div>
-                                <span class="events__month">Tháng 4</span>
-                            </div>
+
                             <p class="events__desc">
                                 Hành trình nghề nghiệp và kết nối việc làm -
                                 PHENIKAA CAREER FAIR 2023
